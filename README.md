@@ -18,7 +18,7 @@ graph TD
     B --> C[Standalone JS bundles<br/>static/widgets/*.js]
     B --> D[Auto-generates<br/>src/mcp/widgets.ts]
     D --> E[MCP Handler]
-    C --> E
+    C --> G
     E --> F[Serves to ChatGPT<br/>as widget:// resources]
     F --> G[ChatGPT loads bundle]
     G --> H[Widget auto-mounts<br/>& renders]
