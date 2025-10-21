@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			// Fix for srcdoc: handle the "about:srcdoc" location protocol
+			if (typeof location !== 'undefined' && location.protocol === 'about:') {
+				// Set a base URL for srcdoc iframes - this will be used by SvelteKit
+				if (!window.__sveltekit_srcdoc_base) {
+					window.__sveltekit_srcdoc_base = '/';
+				}
+			}
+		</script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div>%sveltekit.body%</div>
+	</body>
+</html>

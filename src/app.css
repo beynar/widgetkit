@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@source "../node_modules/svelai/**/*";
+
+@plugin "svelai/tailwind-plugin" {
+	raised-with-border: true;
+}
+@plugin "svelai/tailwind-theme" {
+	name: 'dark';
+	default: true;
+	radius: normal;
+	spacing: large;
+	colorscheme: dark;
+	raised-with-border: true;
+}
+
+@plugin "svelai/tailwind-theme" {
+	name: 'light';
+	radius: normal;
+	spacing: large;
+	colorscheme: light;
+	raised-with-border: true;
+}
